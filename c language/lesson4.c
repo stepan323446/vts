@@ -81,5 +81,7 @@ int main()
         f3 = f1 + f2;
     }
 
+    // Faktorial, Prost broj, Figonachi
+
     return 0;
 }
