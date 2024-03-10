@@ -35,13 +35,13 @@ int main()
     double stvarni_broj;
 
     // Za 14, 15, 16 zadatak
-    // double result = zadatak16(deg, numberInput, &stvarni_broj);
+    // double result = zadatak15(deg, numberInput, &stvarni_broj);
 
     // Ostale
-    double result = zadatak1(numberInput, &stvarni_broj);
+    double result = zadatak3(numberInput, &stvarni_broj);
 
-    printf("Suma reda: %f\n", result);
-    printf("Stvarni broj: %f\n", stvarni_broj);
+    printf("Suma reda: %lf\n", result);
+    printf("Stvarni broj: %lf\n", stvarni_broj);
 
     return 0;
 }
@@ -83,16 +83,19 @@ double zadatak2(int n, double *stvarni_broj) {
 double zadatak3(int n, double *stvarni_broj) {
     double result = 0;
     
+    int isPositive = 1;
     for(int i = 1; i <= n; i++) {
-        if(i % 2 == 0) {
-            printf("-1/%d\n", i);
-            result -= pow(i, -1);
-        }
-        else {
+        if(isPositive) {
             printf("+1/%d\n", i);
             result += pow(i, -1); 
         }
+        else {
+            printf("-1/%d\n", i);
+            result -= pow(i, -1);
+        }
+        isPositive = !isPositive;
     }
+    printf("==========\n");
 
     *stvarni_broj = log(2);
     return result;
@@ -239,14 +242,13 @@ double zadatak14(double a, int n, double *stvarni_broj) {
         double formula = formulaTop / formulaBelow;
         if(isPositive) {
             result += formula;
-            isPositive = 0;
             printf("+%.2f/%.2f = %.2f\n", formulaTop, formulaBelow, formula);
         }
         else {
             result -= formula;
-            isPositive = 1;
             printf("-%.2f/%.2f = %.2f\n", formulaTop, formulaBelow, formula);
         }
+        isPositive = !isPositive;
     }
 
     *stvarni_broj = sin(radian);
@@ -264,15 +266,16 @@ double zadatak15(double a, int n, double *stvarni_broj) {
         double formula = formulaTop / formulaBelow;
         if(isPositive) {
             result += formula;
-            isPositive = 0;
             printf("%.2f/%.2f = +%.2f\n", formulaTop, formulaBelow, formula);
         }
         else {
             result -= formula;
-            isPositive = 1;
             printf("%.2f/%.2f = -%.2f\n", formulaTop, formulaBelow, formula);
         }
+
+        isPositive = !isPositive;
     }
+    printf("===========\n");
 
     *stvarni_broj = cos(radian);
     return result;
