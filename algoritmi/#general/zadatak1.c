@@ -62,6 +62,7 @@ double zadatak1(int n, double *stvarni_broj) {
         printf("1/%d\n", factorial(i));
 
     }
+    printf("=========\n");
     *stvarni_broj = M_E;
     return e;
 }
