@@ -53,7 +53,7 @@ Totak 52
         * `6` `rw` ' read i write
         * `7` `rwx` - read, write, run
 
-3. **Broj `1023` pokazuje koliko bajt košta fajl (osim foldera)**
+3. **Broj `1023` pokazuje koliko bajt košta fajl (osim foldera) -- NE SIGURNO**
 
 4. **Naziv fajla/foldera**
 
