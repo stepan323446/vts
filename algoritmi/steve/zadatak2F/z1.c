@@ -10,6 +10,7 @@
 void displayArray(float arr[], int);
 void placeNumberToArr(float arr[], int, float, int);
 float getMinNumber(float arr[], int);
+float randRange(int, int);
 
 int main() {
     
@@ -30,8 +31,11 @@ int main() {
     
     // Enter n numbers to arr
     for(int i = 0; i < n; i++) {
+        arr[i] = randRange(0, 100);
+        /*
         printf("arr[%d]: ", i);
         scanf("%f", &arr[i]);
+        */
     }
     
     float minNumber = getMinNumber(arr, n);
@@ -40,6 +44,11 @@ int main() {
     displayArray(arr, n);
 
     return 0;
+}
+float randRange(int min, int max) {
+    float decNumber = rand() % (max - min + 1) + min;
+    float flNumber = (float)rand() / (float)RAND_MAX;
+    return decNumber + flNumber;
 }
 float getMinNumber(float arr[], int n) {
     float min = arr[0];
