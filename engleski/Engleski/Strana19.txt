@@ -1,0 +1,33 @@
+1) ** Henry F. Phillips patented the Phillips screw and screwdriver in 1936. What does patented mean? --
+-- Rights to make, use, and sell the innovation.
+2) ** The panel converts the Sun's energy into a DC electric current. Which of the following is not a similar word for 'convert'? --
+-- Revolution
+3) ** Another word for implementation is... - INSTALLATION
+4) ** False Milling machines can perform - DEBATING
+5) ** blueprints - See the technical drawings.
+6) ** AutoCAD DXF - Incompatibility
+7) ** Corrosion is the wearing away of metals due to a chemical reaction. - TRUE
+8) ** To dismantle a machine means... - To take it down.
+9) ** Which of the following is not a function of a vacuum gripper? - IT SHINES. 
+10) ** When we talk about the weight of an object, we are talking about.... - How heavy it is.
+
+MES - Manufacturing execution system
+
+Slika, šta je problem - It's cracked.
+
+simbol - ground
+
+Solar cells use _____ to turn light into energy. - Semiconductors
+
+When you combine P-type and N-type silicon in a solar cell: - Electrons at the N-P junction eventually form a barrier.
+When light hits a solar cell, electrical current comes from: - Electrons traveling from the N side to the P side along a circuit
+A solar cell can only absorb 15 to 25 percent of the sun's energy because...?
+-- Not all wavelengths of light create the right reaction in the cell.
+
+A typical photovoltaic array has 36 cells. If one is shaded, power production drops by... - 50 percent
+
+Alat - Screwdriver
+
+Complete the missing words. The integration of large numbers of tiny _________ into a 
+small chip was an enormous improvement over the manual assembly of circuits using electronic components.
+-- transistors
