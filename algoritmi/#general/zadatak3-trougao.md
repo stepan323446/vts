@@ -277,20 +277,24 @@ for(int row = 0; row < trougao_size; row++) {
 5 4 3 2 1
 ```
 
-This option is more difficult. It's easier not to use a variable here. Basically you will need to go in both loops from value to zero
+We have 2 variables: `numberRow` outside and `number` inside main for. `numberRow` for start number in row, `number` for change number every column.
 
 ```c
 const int trougao_size = 5;
-
-for (int row = trougao_size; row > 0; row--)
+int numberRow = 1;
+for (int row = 0; row < trougao_size; row++)
 {
-    for (int col = trougao_size - row; col >= 0; col--)
+    // variable for numbers, every new row we start from trougao_size
+    int number = numberRow;
+
+    // Same as first example for figure
+    for (int col = 0; col <= row; col++)
     {
-        printf("%d ", col + 1);
+        printf("%d ", number--);
     }
     printf("\n");
+    numberRow++;
 }
-return 0;
 ```
 
 ## Letters
