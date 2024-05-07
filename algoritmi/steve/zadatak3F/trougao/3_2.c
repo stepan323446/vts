@@ -1,13 +1,13 @@
 /*
-    * 
-   * * 
-  * * * 
- * * * * 
-* * * * * 
- * * * * 
-  * * * 
-   * * 
-    * 
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,23 +15,41 @@
 int main() {
     int trougao_size = 5;
     for(int row = 0; row  < trougao_size; row++) {
-        for(int space = trougao_size - row - 1; space > 0; space--) {
+        // Spaces
+        for(int space = 0; space < trougao_size - 1 - row; space++) {
             printf(" ");
         }
-        for(int col = 0; col <= row; col++) {
-            printf("* ");
+        // Left sire
+        for(int col = 0; col <= row - 1; col++) {
+            printf("*");
+        }
+        // Center
+        printf("*");
+        // Right side
+        for(int col = 0; col <= row - 1; col++) {
+            printf("*");
         }
         printf("\n");
     }
-
+    // New trougao with 4 size
     trougao_size--;
     for(int row = 0; row  < trougao_size; row++) {
-        for (int space = 0; space <= row; space++)
+        printf(" ");
+        // Spaces
+        for (int space = 0; space < row; space++)
         {
             printf(" ");
         }
-        for(int col = 0; col < trougao_size - row; col++) {
-            printf("* ");
+        // Left side
+        for(int col = 0; col < trougao_size - row - 1; col++) {
+            printf("*");
+        }
+        // Center
+        printf("*");
+
+        // Right side
+        for(int col = 0; col < trougao_size - row - 1; col++) {
+            printf("*");
         }
         printf("\n");
     }

@@ -4,20 +4,22 @@
 int main()
 {
     const int trougao_size = 5;
-    int numberRow = 1;
-    for (int row = 0; row < trougao_size; row++)
+for (int row = 0; row < trougao_size; row++)
+{
+    for (int space = 0; space < row; space++)
     {
-        // variable for numbers, every new row we start from trougao_size
-        int number = numberRow;
-
-        // Same as first example for figure
-        for (int col = 0; col <= row; col++)
-        {
-            printf("%d ", number--);
-        }
-        printf("\n");
-        numberRow++;
+        // one space instead of two
+        printf(" ");
     }
+
+    // Same
+    for (int col = 0; col < trougao_size - row; col++)
+    {
+        // 2 symbols
+        printf("* ");
+    }
+    printf("\n");
+}
 
     return 0;
 }
