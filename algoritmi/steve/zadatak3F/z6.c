@@ -6,22 +6,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int isPrime(int);
-
-int main() {
-    int numberLength = 0;
-    for(int n = 1; numberLength < 5; n++) {
-        int formula = pow(2, 2*n) + 1;
-        if(isPrime(formula)) {
-            printf("%d\n", formula);
-            numberLength++;
-        }
-    }
-
-    return 0;
-}
-
-int isPrime(int num) {
+int isPrime(unsigned long long int num) {
     if(num == 0 || num == 1)
         return 0;
         
@@ -32,3 +17,18 @@ int isPrime(int num) {
     }
     return 1;
 }
+
+int main() {
+    int numberLength = 0;
+    for(int n = 1; numberLength < 5; n++) {
+        unsigned long long int formula = pow(2, 2*n) + 1;
+        // printf("Searching... (%llu)\n", formula);
+        if(isPrime(formula)) {
+            printf("%llu\n", formula);
+            numberLength++;
+        }
+    }
+
+    return 0;
+}
+
