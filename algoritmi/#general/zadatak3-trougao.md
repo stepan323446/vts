@@ -6,7 +6,7 @@
     * [Without spaces](#simple-type-without-spaces)
     * [With spaces](#with-spaces)
 * [Variables in figure](#variables-in-figure)
-* [Letters](#letters)
+    * [Letters](#letters)
 * [Special figures](#special-figures)
     * [Piramide](#piramide)
     * [Piramide with median](#piramide-with-median)
