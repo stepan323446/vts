@@ -1,8 +1,0 @@
-ime zdenko 
-Ocena 10
-ime dejvid 
-Ocena 9
-ime stepan 
-Ocena 7
-ime matko 
-Ocena 6
