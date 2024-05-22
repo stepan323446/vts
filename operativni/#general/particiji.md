@@ -208,3 +208,31 @@ proc on /proc type proc (rw)
 ```
 
 ## Konverzija sistema datoteka ext2 na ext3
+
+Pomoću programa `tune2fs` naknadno promeniti tip sistema datoteka sa ext2 na ext3, takođe promeniti na 15 maksimalan broj montiranja nakon čega sistem pokreće proveru sistema datoteka.
+
+> Razliku između ext2 i ext3 sistema datoteka čini samo podržavanje mehanizma `journal`, tako naknadna konverzija se može lako ostvariti.
+>
+> Fajl sistem journaling sadrži jedan poseban deo koji se naziva journal ili log.
+>
+> Pre nego što se izvrši neka operacija nad fajl sistemom (neka promena stanja sistema), operacije se zapisuju u log i tek nakon ovoga se izvršava operacija. Ako se u toku izvršavanja sistem padne, journal sadrži sve potrebne informacije na osnovu kojih se operacija može reprodukovati.
+
+1. isključujem fajloivu sistemu sa ext2
+```
+umount /mnt/backup/
+```
+2. Naredbom `tune2fs -j <fajl uredjaja>` se dodaje mehanizam journal.
+```
+tune2fs -j /dev/sda3
+
+Creating journal inode: done
+This filesystem will be automatically checked every 24 mounts or 180 days, whichever comes first. Use tune2fs -c or -i to override.
+```
+3. Maksimalan broj montiranja nakon čega sistem pokreće proveru sistema datoteka se može promeniti opcijom `-c`
+```shell
+tune2fs –c 15 /dev/sda3
+```
+4. Ponovo se montira particija, ali vec kao `ext3`
+```
+mount -t ext3 /dev/sda3 /mnt/backup/
+```
