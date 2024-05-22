@@ -236,3 +236,5 @@ tune2fs –c 15 /dev/sda3
 ```
 mount -t ext3 /dev/sda3 /mnt/backup/
 ```
+Naredba `tune2fs` pomoću opcije `-j` kreira jedan skriveni fajl sa specijalnim atributima, koji će podsistem za rukovanje sa sistemom datoteka koristiti za zapisivanje operacija.
+

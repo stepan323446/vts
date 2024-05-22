@@ -55,3 +55,20 @@ Konfiguracioni fajl servisa syslogd je `/etc/syslog.conf` koji određuje pravila
 Polje za odabir se deli na dva dela: `<servis>.<prioritet>`
 * **Servis** može da se zadaje nekima od sledećih ključnih reči: *auth, authpriv, cron, daemon, kern, lpr, mail, news, syslog, user, uucp i local0-local7.*
 * **Prioritet** se zadaje pomoću ključnih reči. Mogućnosti su (u rastućem redosledu): *debug, info, notice, warning, err, crit, alert, emerg.*
+
+___
+
+Pored jednostavnog zadavanja para servis-prioritet postoje i dalje mogućnosti:
+- Umesto servisa ili prioriteta može da se koristi karakter `*` koji označava sve servise odnosno sve prioritete. Ključna reč none na mestu prioriteta znači "nijedan".
+- Može da se nabroji više servisa razdvojenih zarezima kod datog nivoa prioriteta.
+- Moguće je zadati listu polja za odabir nekoj operaciji tako da se razdvajaju tačkazarezima. U ovom slučaju polja za odabir mogu modifikovati uticaj ranijih polja u listi.
+- U slučaju da se želi izvršiti operacija samo za jedan dati nivo prioriteta, tada treba zadati znak "`=`" ispred imena prioriteta.
+- Zadavanje prioriteta se može negirati pomoću znaka "`!`". Tada će syslog ignorisati sve prioritete koji su isti ili veći od zadatog.
+- Znaci "=" i "!" mogu da se kombinuju u znak "`!=`". Značenje toga je da syslog ignoriše samo dati nivo prioriteta.
+Mogućnosti za operaciju pored pisanja u fajl su:
+- Mogućnost ispisivanja na konzolu (/dev/console).
+- Mogućnost da se ispisuje na ekran nekih korisnika (korisnička imena razdvojena znakom ",").
+- Ispis se šalje na ekran svih prijavljenih korisnika ("*").
+- Ispis se preusmerava u cevovod (pipe) (ispred imena fajla znak "|").
+- Ispis se šalje na centralni računar (iza znaka "@" ime host-a).
+
