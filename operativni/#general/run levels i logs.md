@@ -59,7 +59,7 @@ Polje za odabir se deli na dva dela: `<servis>.<prioritet>`
 Fajlovi za logs:
 * `tail /var/log/maillog` - Svaka poruka mail servera se zapisuje
 * `tail /var/log/secure` - Događaji o prijavama korisnika
-* `tail /var/log/dmesq` - poruke koje je sistem zapisao tokom pokretanja
+* `tail /var/log/dmesg` - poruke koje je sistem zapisao tokom pokretanja
 * `tail /var/log/boot` - Fajl boot.log sadrži događaje o pokretanju i zaustavljenju servisa (događaji koje šalju servis skriptovi iz direktorijuma /etc/rc.d/init.d).
 
 ___
