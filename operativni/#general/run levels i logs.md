@@ -56,6 +56,12 @@ Polje za odabir se deli na dva dela: `<servis>.<prioritet>`
 * **Servis** može da se zadaje nekima od sledećih ključnih reči: *auth, authpriv, cron, daemon, kern, lpr, mail, news, syslog, user, uucp i local0-local7.*
 * **Prioritet** se zadaje pomoću ključnih reči. Mogućnosti su (u rastućem redosledu): *debug, info, notice, warning, err, crit, alert, emerg.*
 
+Fajlovi za logs:
+* `tail /var/log/maillog` - Svaka poruka mail servera se zapisuje
+* `tail /var/log/secure` - Događaji o prijavama korisnika
+* `tail /var/log/dmesq` - poruke koje je sistem zapisao tokom pokretanja
+* `tail /var/log/boot` - Fajl boot.log sadrži događaje o pokretanju i zaustavljenju servisa (događaji koje šalju servis skriptovi iz direktorijuma /etc/rc.d/init.d).
+
 ___
 
 Pored jednostavnog zadavanja para servis-prioritet postoje i dalje mogućnosti:
