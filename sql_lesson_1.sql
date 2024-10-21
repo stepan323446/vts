@@ -134,7 +134,7 @@ SELECT * FROM #editor_properties;
 -- -- -- -- LESSON 1 -- -- -- -- 21.10.2024 -- -- -- --
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 -- limit params:		NOT NULL, NULL, PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK(IN, LIKE)
--- operations:			CREATE TABLE, SELECT, DROP TABLE, INSERT INTO, ALTER TABLE, UPDATE
+-- operations:			CREATE TABLE, SELECT, DROP TABLE, INSERT INTO, ALTER TABLE, UPDATE, DROP DATABASE
 -- Type tables:			https://stackoverflow.com/questions/2920836/local-and-global-temporary-tables-in-sql-server
 
 	-- Local temporary tables (CREATE TABLE #t) are visible only to the connection that creates it, and are deleted when the connection is closed.
