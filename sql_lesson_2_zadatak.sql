@@ -120,7 +120,7 @@ GO
 CREATE TABLE payment_details(
 	id			INT NOT NULL,
 	order_id	INT NOT NULL,
-	amount		INT default '1' NOT NULL,
+	amount		INT DEFAULT '1' NOT NULL,
 	provider	VARCHAR(150) NOT NULL,
 	status		VARCHAR(150) NOT NULL,
 	created_at	DATETIME DEFAULT CURRENT_TIMESTAMP  NOT NULL,
