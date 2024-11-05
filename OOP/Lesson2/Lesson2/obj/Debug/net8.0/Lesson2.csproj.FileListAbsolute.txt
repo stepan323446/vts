@@ -1,0 +1,14 @@
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/bin/Debug/net8.0/Lesson2
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/bin/Debug/net8.0/Lesson2.deps.json
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/bin/Debug/net8.0/Lesson2.runtimeconfig.json
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/bin/Debug/net8.0/Lesson2.dll
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/bin/Debug/net8.0/Lesson2.pdb
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/Lesson2.GeneratedMSBuildEditorConfig.editorconfig
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/Lesson2.AssemblyInfoInputs.cache
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/Lesson2.AssemblyInfo.cs
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/Lesson2.csproj.CoreCompileInputs.cache
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/Lesson2.dll
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/refint/Lesson2.dll
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/Lesson2.pdb
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/Lesson2.genruntimeconfig.cache
+/home/steve-dekart/Documents/vts/Lesson2/Lesson2/obj/Debug/net8.0/ref/Lesson2.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jBiOKuUaJjc=",
+  "success": true,
+  "projectFilePath": "/home/steve-dekart/Documents/vts/Lesson1/Lesson1/Lesson1.csproj",
+  "expectedPackageFiles": [
+    "/home/steve-dekart/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

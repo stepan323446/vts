@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vezbe_oop", "vezbe_oop\vezbe_oop.csproj", "{683A7CBC-514D-4A3B-8A81-52E655870D11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{683A7CBC-514D-4A3B-8A81-52E655870D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683A7CBC-514D-4A3B-8A81-52E655870D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683A7CBC-514D-4A3B-8A81-52E655870D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683A7CBC-514D-4A3B-8A81-52E655870D11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
