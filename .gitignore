@@ -2,3 +2,4 @@
 *.exe
 *.o
 Arch/Project Backups
+Arch/*.workspace
