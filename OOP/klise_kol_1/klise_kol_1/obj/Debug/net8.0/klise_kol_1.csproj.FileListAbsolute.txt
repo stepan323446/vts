@@ -1,0 +1,15 @@
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/bin/Debug/net8.0/klise_kol_1
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/bin/Debug/net8.0/klise_kol_1.deps.json
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/bin/Debug/net8.0/klise_kol_1.runtimeconfig.json
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/bin/Debug/net8.0/klise_kol_1.dll
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/bin/Debug/net8.0/klise_kol_1.pdb
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.GeneratedMSBuildEditorConfig.editorconfig
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.AssemblyInfoInputs.cache
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.AssemblyInfo.cs
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.csproj.CoreCompileInputs.cache
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.sourcelink.json
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.dll
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/refint/klise_kol_1.dll
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.pdb
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/klise_kol_1.genruntimeconfig.cache
+/home/steve-dekart/Документы/Programming/vts/OOP/klise_kol_1/klise_kol_1/obj/Debug/net8.0/ref/klise_kol_1.dll
