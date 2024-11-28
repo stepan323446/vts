@@ -1,4 +1,7 @@
-﻿namespace klise_kol_1;
+﻿using System.Globalization;
+using System.Text;
+
+namespace klise_kol_1;
 
 class Program
 {
@@ -27,7 +30,7 @@ class Program
         foreach (string line in lines)
         {
             // Set new employer
-            Employer employer = Employer.GetEmployerFromString(line);
+            Employer employer = (Employer)line;
             employers.Add(employer);
             
             // 3. Education counter
@@ -66,4 +69,69 @@ class Program
         foreach(Employer employer in employers)
             Console.WriteLine($"Education: {employer.education}, salary: {employer.salary}, job: {employer.job}");
     }
+    
+    public static string cutter(StringBuilder line, string delim)
+    {
+        string oneLine = line.ToString();
+        int x = oneLine.IndexOf(delim);
+        int length = delim.Length;
+        if (x == -1)
+        {
+            x = oneLine.Length;
+            length = 0;
+        }
+        string result = oneLine.Substring(0, x);
+        line.Remove(0, x + length);
+        Console.WriteLine("Ostatak: " + line.ToString());
+        return result;
+    }
+
+    public static void parseLine(string line)
+    {
+   
+//StringBuilder logLine = new StringBuilder();
+//  ovo je linija koda zbog koje je bila greska na casu i zbog cega je izbacivalo gresku za metod parseDate 
+// treba da bude konstruktor sa prametrom, a parameter je ulazni podatak tipa string  (line) metode LogEntry
+//sve ostalo sto smo radili na casu je dobro
+
+        StringBuilder logLine = new StringBuilder(line); //ß ovako je ispravno
+        Console.WriteLine(line);
+        string ip = cutter(logLine, " ");
+        Console.WriteLine("IP adresa: " + ip);
+        cutter(logLine, " "); //brisemo deo podataka koji nam ne treba
+        cutter(logLine, "[");
+        string dateString = cutter(logLine, " ");
+        Console.WriteLine("Datum: "+dateString);
+        DateTime date=parseDate(dateString);
+        Console.WriteLine("Datum (kao DateTime tip):"+date.ToString()); 
+            
+        cutter(logLine, " \"");
+        string request = cutter(logLine, "\"");
+        Console.WriteLine("Request: "+request);
+        cutter(logLine, " ");
+        string statusStr= cutter(logLine, " ");
+        int status=int.Parse(statusStr);
+        Console.WriteLine("Status: "+status);
+            
+        string returnedBytesStr=cutter(logLine, " ");
+        int returnedBytesInt=int.Parse(returnedBytesStr);
+        Console.WriteLine("Bytes: "+returnedBytesInt);
+    }
+    private static DateTime parseDate(string dateString)
+    {
+            
+        //21/Sep/2015:07:59:14
+        string format = "//dd/MM/yyyy:HH:mm:ss";
+        CultureInfo provider = CultureInfo.InvariantCulture;
+
+        return DateTime.ParseExact(dateString, format, provider);
+        /*
+        StringBuilder date = new StringBuilder(dateString);
+        int x = dateString.IndexOf(":");
+        date.Replace(":", " ", x, 1);
+        return DateTime.Parse(date.ToString());
+        */
+    }
+
+
 }

@@ -20,10 +20,13 @@ public class Employer
         this.salary = salary;
         this.isEmployed = isEmployed;
     }
-
-    public static Employer GetEmployerFromString(string line)
+    
+    public static explicit operator Employer(string line)
     {
         string[] parts = line.Split(',');
+        if(parts.Length != 5)
+            throw new FormatException();
+        
         bool isEmployed = parts[4] == "yes";
 
         return new Employer(
@@ -34,6 +37,8 @@ public class Employer
             isEmployed
         );
     }
+    public static Employer Parse(string line) => (Employer)line;
+     
     // c) Definisati ToString() metodu, koji vraća podatke o godinama "age" i obrazovanju "education".
     public override string ToString()
     {
