@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/steve-dekart/Documents/vts/vezbe_oop/vezbe_oop/vezbe_oop.csproj",
+      "projectUniqueName": "/home/steve-dekart/Documents/projects/vts/OOP/vezbe_oop/vezbe_oop/vezbe_oop.csproj",
       "projectName": "vezbe_oop",
-      "projectPath": "/home/steve-dekart/Documents/vts/vezbe_oop/vezbe_oop/vezbe_oop.csproj",
+      "projectPath": "/home/steve-dekart/Documents/projects/vts/OOP/vezbe_oop/vezbe_oop/vezbe_oop.csproj",
       "packagesPath": "/home/steve-dekart/.nuget/packages/",
-      "outputPath": "/home/steve-dekart/Documents/vts/vezbe_oop/vezbe_oop/obj/",
+      "outputPath": "/home/steve-dekart/Documents/projects/vts/OOP/vezbe_oop/vezbe_oop/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/steve-dekart/.nuget/NuGet/NuGet.Config"
