@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vezbe_oop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+615b9f6f48c532c81ca219998c5c0d9213874d8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("vezbe_oop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vezbe_oop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

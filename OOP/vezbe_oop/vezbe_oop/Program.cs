@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Net;
 
 namespace MyApp
 {
@@ -77,6 +78,7 @@ namespace MyApp
                 }
                 
             } while (indexTHE != -1);
+            
             PrintAnswer(
                 "data2.txt",
                 5,
@@ -204,7 +206,7 @@ namespace MyApp
                 string.Join("\n", counterCarType.Select(car => $"[{car.Key}] {car.Value}]"))
             );
         }
-
+        
         static void PrintAnswer(string filename, int num, string question, string answer)
         {
             ConsoleColor defaultColor = Console.ForegroundColor;

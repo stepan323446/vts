@@ -1,5 +1,6 @@
 using Social;
 using Utils;
+using System.Text;
 
 namespace Education;
 
@@ -25,6 +26,8 @@ public class School : ISocialStructure
         ConsoleUtils.WriteLineColor(reason, ConsoleColor.Red);
     }
     public void BanStudent(Student student) => this.BanStudent(student, "Not pass Abu Exam");
+
+    private StringBuilder 
     
     public void CompleteEducationStudent(Student student)
     {

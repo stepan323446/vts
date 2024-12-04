@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q2IoenhwqjQ=",
+  "dgSpecHash": "V25sN4nlw7A=",
   "success": true,
-  "projectFilePath": "/home/steve-dekart/Documents/vts/vezbe_oop/vezbe_oop/vezbe_oop.csproj",
+  "projectFilePath": "/home/steve-dekart/Documents/projects/vts/OOP/vezbe_oop/vezbe_oop/vezbe_oop.csproj",
   "expectedPackageFiles": [
     "/home/steve-dekart/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.10/microsoft.aspnetcore.app.ref.8.0.10.nupkg.sha512"
   ],
