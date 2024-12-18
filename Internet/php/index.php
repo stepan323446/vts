@@ -1,76 +1,85 @@
 <?php
-$error_message = false;
-$result = false;
-if(!empty($_POST['number_1']) && !empty($_POST['number_2']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
-    $num_1 = (float)$_POST['number_1'];
-    $num_2 = (float)$_POST['number_2'];
+$str0 = "0";
+$str1 = "5";
+$str2 = "3";
+$str12 = $str1 + $str2;
 
-    switch($_POST['operation']) {
-        case 'add':
-            $result = $num_1 + $num_2;
-        break;
+$str = "Hello world";
+// real string not working - error
 
-        case 'sub':
-            $result = $num_1 - $num_2;
-        break;
 
-        case 'plural':
-            $result = $num_1 * $num_2;
-        break;
-
-        case 'divide':
-            $result = $num_1 / $num_2;
-        break;
-        
-        default:
-            $error_message = "Unexpected operation";
-        break;
-    }
-        
-}
-else if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error_message = "You don't have some number";
-}
 ?>
+<h1>
+    <?php 
+    include_once "data.php";
+    require_once "data.php";
+    ?>
+</h1>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadatak</title>
-</head>
-<body>
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Digitron</legend>
-            <label for="number_1">Prvi broj</label>
-            <input type="number" name="number_1" id="number_1" value="<?php if(isset($_POST['number_1'])) echo $_POST['number_1'] ?>">
+<p>
+    str1 "5" + str2 "3" = <?php var_dump($str12) ?>
+</p>
+<p>
+    str1 "5" as int = <?php var_dump((int)$str1) ?>
+</p>
+<p>
+    str "Hello world" as int = <?php var_dump((int)$str) ?>
+</p>
+<p>
+    empty for 0 = <?php echo empty(0) ?>
+</p>
+<p>
+    isset for $str0 = <?php echo isset($str0) ?>
+</p>
+<?php
+// if str "0", its false
+$result_with = ($str0 && true);
+?>
+<p>($str0 && true) = <?php var_dump($result_with) ?></p>
 
-            <label for="operation">Operacija</label>
-            <select name="operation" id="operation">
-                <option value="add" default>+</option>
-                <option value="sub" default>-</option>
-                <option value="plural" default>X</option>
-                <option value="divide" default>/</option>
-            </select>
+<?php
+// if str "0", its false
+$mynull = null;
+?>
+<p>isset($mynull) = <?php var_dump(value: isset($mynull)) ?></p>
 
-            <label for="number_2">Drugi broj</label>
-            <input type="number" name="number_2" id="number_2" value="<?php if(isset($_POST['number_2'])) echo $_POST['number_2'] ?>">
+<?php
+// if str "0", its false
+$zero_or_one = $str0 ?? $str1;
+?>
+<p>str0 ?? str1 = <?php var_dump($zero_or_one) ?></p>
 
-            <button type="submit">Rezultat</button>
-        </fieldset>
-    </form>
-    <?php if($result !== false): ?>
-    <p>
-        Result: <?php echo $result ?>
-    </p>
-    <?php endif; ?>
+<?php
+$ternarni_if = ($str0 && $str1) ? "YES" : "NO";
+?>
+<p>($str0 && $str1) ? "YES" : "NO" = <?php var_dump($ternarni_if) ?></p>
 
-    <?php if($error_message !== false): ?>
-    <p>
-        Error: <?php echo $error_message ?>
-    </p>
-    <?php endif; ?>
-</body>
-</html>
+<?php
+$some_str1 = (int)"1.5Hello_World434";
+$some_str2 = (float)"1.5Hello_World434";
+?>
+<p>(int)"1.5Hello_World434" = <?php var_dump($some_str1) ?></p>
+<p>(float)"1.5Hello_World434" = <?php var_dump($some_str2) ?></p>
+
+<?php
+$arr = array(
+    "name" => "Stepan",
+    "lname" => "Turitsin"
+);
+?>
+<p><?php var_dump($arr) ?></p>
+
+<?php
+$spaceship = 2 <=> 1;
+?>
+<p>
+    2<=>1 = <?php var_dump($spaceship) ?>
+</p>
+
+<?php
+$arr2 = [1, 2, 3, 4, 5];
+$check = $arr2[5] ?? 1;
+?>
+<p>
+$check = $arr2[5] ?? 1 = <?php var_dump($check) ?>
+</p>
