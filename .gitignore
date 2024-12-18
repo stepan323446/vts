@@ -3,6 +3,3 @@
 *.o
 Arch/Project Backups
 Arch/*.workspace
-Mikrokontroleri/*
-!Mikrokontroleri/scripts/
-!Mikrokontroleri/*.mcp
