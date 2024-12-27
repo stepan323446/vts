@@ -3,10 +3,10 @@
 -- +------------------------------+
 CREATE TABLE users (
     -- Private information
-    id              INT IDENTITY NOT NULL,
-    username        VARCHAR NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
+    username        VARCHAR UNIQUE NOT NULL,
     password        VARCHAR NOT NULL,
-    email           VARCHAR NOT NULL,
+    email           VARCHAR UNIQUE NOT NULL,
     role            CHAR(15) NOT NULL DEFAULT 'user',
     is_active       INT NOT NULL DEFAULT 1,
 
@@ -25,7 +25,7 @@ CREATE TABLE users (
     CONSTRAINT user_publicity_check CHECK(publicity IN ('private', 'only_friends', 'friend_friends', 'everyone'))
 );
 CREATE TABLE notifications (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     name            VARCHAR NOT NULL,
     content         VARCHAR NULL,
     
@@ -51,8 +51,8 @@ CREATE TABLE blacklist (
 
 -- if users are subscribed to each other, they are friends.
 CREATE TABLE followers (
-    follower_user_id         INT NOT NULL,
-    followed_user_id INT NOT NULL,
+    follower_user_id        INT NOT NULL,
+    followed_user_id		INT NOT NULL,
 
     created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
 
@@ -65,7 +65,7 @@ CREATE TABLE followers (
 -- |          C H A T S           |
 -- +------------------------------+
 CREATE TABLE chats (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     name            VARCHAR NOT NULL,
     type            CHAR(15) NOT NULL DEFAULT 'personal',
     is_closed       INT NOT NULL DEFAULT 0,
@@ -86,7 +86,7 @@ CREATE TABLE chat_participants (
     FOREIGN KEY(chat_id) REFERENCES chats(id)
 );
 CREATE TABLE chat_messages (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     content         TEXT NOT NULL,
 
     user_id         INT NOT NULL,
@@ -102,7 +102,7 @@ CREATE TABLE chat_messages (
 -- |          P O S T S           |
 -- +------------------------------+
 CREATE TABLE posts (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     content         TEXT NOT NULL,
 
     user_id         INT NOT NULL,
@@ -115,13 +115,13 @@ CREATE TABLE posts (
     FOREIGN KEY(user_id) REFERENCES users(id)
 );
 CREATE TABLE post_comments (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     content         TEXT NOT NULL,
 
     created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
 
-     -- If user reply other comment
+    -- If user reply other comment
     parent_id        INT NULL,
 
     post_id         INT NOT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE post_comments (
     FOREIGN KEY(user_id) REFERENCES users(id)
 );
 CREATE TABLE post_reactions (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     type            CHAR(15) NOT NULL DEFAULT 'like',
 
     created_at      DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -155,7 +155,7 @@ CREATE TABLE post_reactions (
 
 -- Only for images
 CREATE TABLE albums (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     description     VARCHAR NULL,
     is_private      INT NOT NULL DEFAULT 0,
 
@@ -169,7 +169,7 @@ CREATE TABLE albums (
     FOREIGN KEY(user_id) REFERENCES users(id)
 );
 CREATE TABLE files (
-    id              INT IDENTITY NOT NULL,
+    id              INT IDENTITY UNIQUE NOT NULL,
     path_url        VARCHAR NOT NULL,
     description     VARCHAR NULL,
     type            CHAR(15) NOT NULL,
