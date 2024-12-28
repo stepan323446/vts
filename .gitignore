@@ -1,5 +1,7 @@
 .vscode/
 *.exe
 *.o
+*.kdenlive
+*.aup3
 Arch/Project Backups
 Arch/*.workspace
