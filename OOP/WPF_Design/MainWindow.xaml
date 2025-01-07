@@ -1,0 +1,88 @@
+﻿<Window x:Class="wpf_dizajn_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_dizajn_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Apply" Margin="0 0 10 0"/>
+                <Button Content="Reset" Grid.Column="1"/>
+                <Button Content="Refresh" Margin="10 0 0 0" Grid.Column="2"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock FontWeight="Bold" Text="Pulse Properties"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0.6*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <StackPanel Grid.ColumnSpan="2">
+                    <TextBlock Text="Description"/>
+                    <TextBox/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Margin="0, 0, 10, 0">
+                    <TextBlock Text="Status"/>
+                    <TextBox Background="#fff3c4"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1">
+                    <TextBlock Text="Revision"/>
+                    <TextBox Background="#fff3c4"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
+                    <TextBlock Text="Part number"/>
+                    <TextBox Background="#fff3c4"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        
+        <TextBlock FontWeight="Bold" Margin="0, 10, 0, 10" Text="Raw material"/>
+        <StackPanel>
+            <TextBlock Text="Material"/>
+            <ComboBox>
+                <ComboBoxItem Content="Option 1"/>
+                <ComboBoxItem Content="Option 2"/>
+                <ComboBoxItem Content="Option 3"/>
+            </ComboBox>
+        </StackPanel>
+        
+        <TextBlock FontWeight="Bold" Margin="0, 10, 0, 10" Text="Manufacturing information"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel>
+                <TextBlock Text="Work centres"/>
+                <CheckBox Content="checkbox1"/>
+                <CheckBox Content="checkbox2"/>
+                <CheckBox Content="checkbox3"/>
+                <CheckBox Content="checkbox4"/>
+                <CheckBox Content="checkbox5"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <CheckBox Content="checkbox6"/>
+                <CheckBox Content="checkbox7"/>
+                <CheckBox Content="checkbox8"/>
+                <CheckBox Content="checkbox9"/>
+                <CheckBox Content="checkbox10"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>

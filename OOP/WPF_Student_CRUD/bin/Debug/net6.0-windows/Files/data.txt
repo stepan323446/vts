@@ -1,0 +1,4 @@
+Stepan:26123036:9:Fizika od Deda Mraza
+David:26123035:8:Fizika od Deda Mraza
+Konstantin:26123037:10:OOP kolokvijum
+Samuel:25123025:4:Operativni sistemi - ispit
