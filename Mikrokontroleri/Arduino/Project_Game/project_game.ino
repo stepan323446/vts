@@ -213,10 +213,10 @@ void loop() {
 
   if(!gameOver) {
     // Move enemies
-    enemy_walk(enemy1, 1);
-    enemy_walk(enemy2, 2);
-    enemy_walk(enemy3, 3);
-    enemy_walk(enemy4, 4);
+    enemy_walk(enemy1);
+    enemy_walk(enemy2);
+    enemy_walk(enemy3);
+    enemy_walk(enemy4);
 
     // Move kit
     ticksKit--;
@@ -247,8 +247,8 @@ void dropAidKit() {
   // Pick up kit
   if(aidKit->x == player->x && aidKit->y == player->y) {
     playerHealth++;
-    if(playerHealth > 3)
-      playerHealth = 3;
+    if(playerHealth > maxPlayerHealth)
+      playerHealth = maxPlayerHealth;
 
     // Display health
     for(int i = 0; i < playerHealth; i++) {
@@ -256,7 +256,7 @@ void dropAidKit() {
     }
   }
 }
-void enemy_walk(GameObject* enemy, int enemyNumber) {
+void enemy_walk(GameObject* enemy) {
   // Move player
   enemy->x -= 1;
 
