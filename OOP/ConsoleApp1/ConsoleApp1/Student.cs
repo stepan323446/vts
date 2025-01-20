@@ -1,31 +1,38 @@
 namespace ConsoleApp1;
 
-public class MyNumber
+abstract class Vegetables
 {
-    public int Number { get; set; }
+    public string Color { get; set; }
+    protected abstract void SomeMethod();
 
-    public MyNumber(string number)
+    public Vegetables(string color)
     {
-        Number = int.Parse(number);
-    }
-    public MyNumber(int number)
-    {
-        Number = number;
+        Color = color;
     }
 }
 
-public class Car
+interface ISome
 {
-    static Car()
+    public string GetData();
+    public void Eat();
+}
+class Tomato<T> : Vegetables, ISome
+{
+    public T Data { get; set; }
+    protected override void SomeMethod() { }
+
+    public Tomato(string color, T wtf) : base(color)
     {
-        
+        Data = wtf;
     }
-    
+    public string GetData()
+    {
+        return $"This is tomato. {Color}";
+    }
+
+    public void Eat()
+    {
+        throw new NotImplementedException();
+    }
 }
 
-public class A { }
-
-public class B : A { }
-
-public class C : B { }
-public class D : C { }
