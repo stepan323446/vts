@@ -2,6 +2,24 @@
 
 *Code samo za primere. Ne treba pisati za odgovor na ispitu*
 
+## Sadrzaj
+* [1. Šta je cilj definisanja klase?](#1-šta-je-cilj-definisanja-klase)
+* [2. Šta znate o konstruktoru?](#2-šta-znate-o-konstruktoru)
+* [3. Kakvo nasleđivanje podržava C#?](#3-kakvo-nasleđivanje-podržava-c)
+* [4. Koje nivoe pristupa možemo definisati atributu klase?](#4-koje-nivoe-pristupa-možemo-definisati-atributu-klase)
+* [5. Koji elementi klase se ne nasleđuju?](#5-koji-elementi-klase-se-ne-nasleđuju)
+* [6. Navedite dva razloga zbog kojih bi trebalo da se predefiniše metod koji je već implementiran u nadklasi!](#6-navedite-dva-razloga-zbog-kojih-bi-trebalo-da-se-predefiniše-metod-koji-je-već-implementiran-u-nadklasi)
+* [7. Koje metode se ne mogu predefinisati u podklasi?](#7-koje-metode-se-ne-mogu-predefinisati-u-podklasi)
+* [8. Koje metode se moraju predefinisati u podklasi?](#8-koje-metode-se-moraju-predefinisati-u-podklasi)
+* [9. Koja je ključna reč za kreiranje klase koja se ne može koristiti u procesu nasleđivanja?](#9-koja-je-ključna-reč-za-kreiranje-klase-koja-se-ne-može-koristiti-u-procesu-nasleđivanja)
+* [10. Objasnite pojam polimorfizma!](#10-objasnite-pojam-polimorfizma)
+* [11. Objasnite pojam apstraktne klase!](#11-objasnite-pojam-apstraktne-klase)
+* [12. Koje prednosti ima korišćenje interface-a?](#12-koje-prednosti-ima-korišćenje-interface-a)
+* [13. Šta je izuzetak?](#13-šta-je-izuzetak)
+* [14. Objasnite prednost korišćenja stilova u XAML fajlu!](#14-objasnite-prednost-korišćenja-stilova-u-xaml-fajlu)
+* [15. Šta znate o Grid kontejneru?](#15-šta-znate-o-grid-kontejneru)
+* [16. Šta znate o StackPanel kontejneru?](#16-šta-znate-o-stackpanel-kontejneru)
+
 ## **1. Šta je cilj definisanja klase?**
 
 **Klasa** je korisnički definisan tip koji se sastoji od polja podataka (promenljivih) i članova koji rade sa ovim podacima (metode, svojstva).
