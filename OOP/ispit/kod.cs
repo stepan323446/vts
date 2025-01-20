@@ -1,5 +1,3 @@
-﻿namespace ConsoleApp1;
-
 // 1) Napisati novi klass (naravno abstraktni) sa imenom "Vozilo"
 abstract class Vozilo
 {
