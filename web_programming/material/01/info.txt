@@ -1,0 +1,11 @@
+https://getbootstrap.com/
+
+responsive view in browsers:
+
+ctrl+shift+m or find option Web Developer Tools and inside Toggle Device Emulation (ctrl+shift+m)
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background
+
+
+
+
